@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ebdfdf;
+    }
+
+    h1{
+    font-family: Comic Sans MS;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        background-color: #000000;
+        overflow: hidden;
+    }
+
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        float: left;
+        text-align: center;
+        margin-left: 200px;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .container {
+        margin: 20px;
+       
+    }
+
+    .category {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+       
+        
+    }
+
+    .category div {
+        width: 30%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .category img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+
+        
+    }
+
+    .gallery img {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Dog World</h1>
+        <p>Your Ultimate Guide to Dogs and Puppies</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Dog Categories</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#nutrition">Food & Nutrition</a>
+        <a href="#query">Ask a Question</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Welcome to Dog World!</h2>
+            <p>Here, you can learn everything about dogs, puppies, their breeds, behaviors, and how to take care of
+                them. Explore the categories of dogs and check out our gallery to see some adorable pups!</p>
+        </section>
+
+        <section id="categories">
+            <h2>Types of Dogs and Puppies</h2>
+            <div class="category">
+                <div>
+                    <h3>Breed: Labrador Retriever</h3>
+                    <img src="https://dogbreeds.wiki/uploads/l/labrador-retriever-photo-7.jpg" alt="Labrador Retriever">
+                    <p>Country: USA</p>
+                    <p>Behavior: Friendly, outgoing, and good with families.</p>
+                </div>
+                <div>
+                    <h3>Breed: German Shepherd</h3>
+                    <img src="https://i2.wp.com/pawleaks.com/wp-content/uploads/2020/11/Rottweiler-German-Shepherd-mix.png"
+                        style="height: 800px;" alt="German Shepherd">
+                    <p>Country: Germany</p>
+                    <p>Behavior: Loyal, courageous, and intelligent.</p>
+                </div>
+                <div>
+                    <h3>Breed: Shiba Inu</h3>
+                    <img src="https://th.bing.com/th/id/R.e76a11ceb42357be674d8497c92e75bb?rik=jcFEtMVBokvz%2bg&pid=ImgRaw&r=0"
+                        style="height: 800px;" width="900px" alt="Shiba Inu">
+                    <p>Country: Japan</p>
+                    <p>Behavior: Independent, alert, and fox-like behavior.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Dog Gallery</h2>
+            <div class="gallery">
+                <img src="https://miro.medium.com/v2/resize:fit:7244/1*TQPYUFB7OqEFQC2YZ62Aaw.jpeg" alt="Dog 1">
+                <img src="https://avatars.mds.yandex.net/i?id=6be1a53e00976363f67c7aea41bc9ad9_l-9226056-images-thumbs&ref=rim&n=13&w=1440&h=754"
+                    alt="Dog 2">
+                <img src="https://s.yimg.com/ny/api/res/1.2/_uAz.7mozDx9nn2VImCrRg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/petsradar_797/d30aa7940619a4d9ff77d19aea873d92"
+                    alt="Dog 3">
+                <img src="https://nypost.com/wp-content/uploads/sites/2/2023/08/NYPICHPDPICT000012736005.jpg?quality=75&amp;strip=all&amp;w=1024"
+                    alt="Dog 4">
+            </div>
+        </section>
+
+        <section id="nutrition">
+            <h2>Food & Nutrition Tips</h2>
+            <p>Learn how to keep your dog healthy with the best food and nutrition tips!</p>
+            <ul>
+                <li>High-quality dry kibble for adult dogs.</li>
+                <li>Raw food diets for dogs with food allergies.</li>
+                <li>Ensure fresh water is available at all times.</li>
+            </ul>
+        </section>
+
+        <section id="query">
+            <h2>Have Questions?</h2>
+            <p>If you have any questions about dogs, feel free to ask!</p>
+            <a href="mailto:ask@dogworld.com">Click here to send your questions.</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dog World - All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
