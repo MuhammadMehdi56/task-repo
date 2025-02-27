@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY Dagets</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        section#home {
+            background-color: #ecf0f1;
+        }
+
+        section#about,
+        section#services,
+        section#contact {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        form button:hover {
+            background-color: orangered;
+            color: black;
+        }
+
+        /* Products Section */
+        #products {
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        #products h2 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .product-item {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-item h3 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .product-item p {
+            color: #7f8c8d;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .product-item button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-item button:hover {
+            background-color: #34495e;
+        }
+
+
+
+        /* New Products Section */
+
+        #products {
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        #products h2 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .product-item {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-item h3 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .product-item p {
+            color: #7f8c8d;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .product-item button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-item button:hover {
+            background-color: #34495e;
+        }
+
+
+        /* ? */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to MY Dagets</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Your Journey Starts Here</h2>
+        <p>Discover amazing things with Dagets, your ultimate destination for information and resources.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Dagets is a platform that provides innovative solutions and insights into various domains.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Digital Marketing</li>
+            <li>Consulting</li>
+        </ul>
+    </section>
+
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Trending Products for Men</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="html/watch.jpg" alt="Product 1">
+                <h3>Smart Watch</h3>
+                <p>Track your health and stay connected with the latest smartwatch.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="html/MEE-Audio-X10-Bluetooth-fülhallgató-dokkoló-open-3_big.jpg" alt="Product 2">
+                <h3>Wireless Earbuds</h3>
+                <p>Experience high-quality sound with these wireless earbuds.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="html/jacket.jpg" alt="Product 3">
+                <h3>Leather Jacket</h3>
+                <p>A stylish and durable leather jacket for any occasion.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="html/headset.jpg" alt="Product 4">
+                <h3>Gaming Headset</h3>
+                <p>Immersive gaming experience with crystal-clear sound.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Products -->
+    <div class="product-item">
+        <img src="html/JBL-flip.jpg" alt="Bluetooth Speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p>Portable speaker for music lovers, take your music anywhere.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/5b51c42e-7edf-4e49-b667-a5e572ce3f12.webp" alt="Fitness Tracker">
+        <h3>Fitness Tracker</h3>
+        <p>Track your workouts and health with this sleek fitness tracker.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/drone" alt="Drone">
+        <h3>Drone</h3>
+        <p>Capture stunning aerial views with the latest drone technology.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/power bank.jpg" alt="Portable Power Bank">
+        <h3>Portable Power Bank</h3>
+        <p>Charge your devices on the go with this powerful power bank.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/mens.jpg" alt="Men's Sneakers">
+        <h3>Men's Sneakers</h3>
+        <p>Stylish and comfortable sneakers for everyday wear.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/bag.webp" alt="Backpack">
+        <h3>Backpack</h3>
+        <p>A functional and trendy backpack for your daily adventures.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/real-mobile.png" alt="Smartphone">
+        <h3>Smartphone</h3>
+        <p>Get the latest features with a cutting-edge smartphone.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/shaving kit.webp" alt="Shaving Kit">
+        <h3>Shaving Kit</h3>
+        <p>A complete grooming kit for a smooth shave.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/leather wallet.jpg" alt="Leather Wallet">
+        <h3>Leather Wallet</h3>
+        <p>Classic leather wallet for everyday use, a must-have accessory.</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="html/thermostat.jpg" alt="Smart Thermostat">
+        <h3>Smart Thermostat</h3>
+        <p>Save energy with a smart thermostat for your home.</p>
+        <button>Buy Now</button>
+    </div>
+    </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dagets. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Thank you for your message. We will get back to you soon.");
+    });
+
+</script>
+
+</html>
