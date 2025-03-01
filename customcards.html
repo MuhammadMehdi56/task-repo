@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+
+
+
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background-color: #fff;
+            margin: 110px 80px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+            border-radius: 15px;
+        }
+
+        .card:hover {
+            height: 320px;
+        }
+
+
+        .card .image {
+            position: relative;
+            width: 260px;
+            height: 260px;
+
+            top: -40%;
+            left: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .card .image img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .card .content {
+            position: relative;
+            top: -140px;
+            padding: 10px 15px;
+            color: #111;
+            text-align: center;
+
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        .card:hover .content {
+            margin-top: 30px;
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0.2s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row mx-0 px-0">
+        <div class="col-4">
+
+            <div class=card>
+                <div class=image>
+                    <img src="/imge/ar1.jpg" alt="">
+                </div>
+                <div class=content>
+                    <h3>ASSAULT RIFLE  &COPY;M416</h3>
+                    <p>The M416, the last of the military 1/4 ton Jeep trailers, can be distinguished from earlier 1/4
+                        ton trailers by its squared fenders. There were two later versions, the M416A1 and the M416B1.
+                        The M416B1 used the smaller 6.00 X 16 tires on M422 wheels because it was designed to be towed
+                        by the USMC M422 'Mighty Mite' instead of the M151 that towed the M416's and M416</p>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img src="/imge/ar3.jpg" alt="">
+                </div>
+                <div class=content>
+                    <h3>ASSAULT RIFLE &COPY;M16</h3>
+                    <p>The M16 rifle (officially designated Rifle, Caliber 5.56 mm, M16) is a family of assault rifles
+                        adapted from the ArmaLite AR-15 rifle for the United States military. The original M16 rifle was
+                        a 5.56×45mm automatic rifle with a 20-round magazine</p>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img src="/imge/ar2.jpg" alt="">
+                </div>
+                <div class=content>
+                    <h3>ASSAULT RIFLE &COPY;MK13</h3>
+                    <p>The MK 13 rifle is made using the Accuracy International Chassis System (AICS) version 2.0 mated
+                        to a long action Remington 700 receiver. The AICS 2.0 folding stock reduces the rifle's overall
+                        length by 210 mm (8.3 in) when folded and adds 0.2 kg (0.44 lb) to the rifle's total weight</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
