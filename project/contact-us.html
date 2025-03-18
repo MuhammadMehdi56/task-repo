@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(asset/images/5.avif);
+            color: #333;
+        }
+
+        .head {
+           
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: lucida handwriting ;
+        }
+
+        .head h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .contact-container,
+        .contact-info {
+            background-color: rgba(44, 44, 44, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            width: 90%;
+        }
+
+        .contact-container h1,
+        .contact-info h2 {
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .contact-info p {
+            color: white;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container,
+            .contact-info {
+                width: 95%;
+            }
+
+            .head h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .head h1 {
+                font-size: 2rem;
+            }
+
+            .contact-container,
+            .contact-info {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="contact-container">
+        <h1>Get in Touch</h1>
+        <form action="#">
+            <input type="text" id="Name" name="Name" placeholder="Your Name" required>
+            <input type="email" id="Email" name="Email" placeholder="Your Email" required>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone" required>
+            <textarea id="message" name="message" placeholder="Write something" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <h2>Our Contact Information</h2>
+        <p>Phone: 1234567890</p>
+        <p>Email: puppyweb@gmail.com</p>
+    </div>
+</body>
+
+</html>

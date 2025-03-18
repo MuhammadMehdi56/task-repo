@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Beautiful Navbar</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* Space between logo, nav, and search */
+            background: linear-gradient(45deg, #000000, #636060);
+            padding: 15px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            /* Set a gap of 5px between navigation items */
+            margin: 0 auto;
+            /* Center the navigation items */
+            padding: 0;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 25px;
+            transition: background 0.3s ease, transform 0.2s ease;
+
+        }
+
+        .navbar ul li a:hover {
+            background: rgba(243, 243, 243, 0.2);
+            transform: scale(1.1);
+        }
+
+        /* Dropdown Menu Styles */
+        .navbar ul li .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .navbar ul li:hover .dropdown {
+            display: block;
+        }
+
+        .navbar ul li .dropdown a {
+            color: #333;
+           
+            display: block;
+            transition: background 0.3s ease;
+        }
+
+        .navbar ul li .dropdown a:hover {
+            background: #f4f4f4;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Patrona Puppy</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Puppy Care</a></li>
+            <li><a href="#">Dog Breeds</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">External Pages</a></li>
+        </ul>
+        <div class="titte">
+            <h1>External Pages</h1>
+        </div>
+        <div class="button">
+            <a href="#" class="btn">Gallery</a>
+            <a href="#" class="btn">Gloden Retireven</a>
+            <a href="#" class="btn">German Shaphed</a>
+        </div>
+        <form class="d-flex" role="search" style="width: 500px;">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+    
+
+
+
+</body>
+<script src="asset/js/bootstrap.bundle.js"></script>
+
+</html>

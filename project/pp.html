@@ -1,69 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Puppy world </title>
-  <link rel="stylesheet" href="pp.css">
-  <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy world </title>
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
 </head>
 <style>
-  .d-flex {
+  /* Basic Styles */
 
-    width: 700px;
-    margin-right: 100px;
-
+  /* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-
-  .nav-links {
-
-
-    margin-right: 170px;
-    margin-top: 15px;
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    font-family: Lucida Handwriting;
-    padding-top: 2px;
-
+    background-color: #000000;
+    padding: 10px 20px;
   }
-
-  h2 {
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
     color: white;
-    font-family: Lucida Handwriting;
-    font-weight: 400;
-    font-style: normal;
-    margin-right: 250px;
-    padding-bottom: 2px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ff9900;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 50px;
+    margin: 20px 0;
+  }
+  
+  #home {
+    background-color: #f0f0f0;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ff9900;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 50px;
+    margin: 20px 0;
+  }
+  
+  #home {
+    background-color: #f0f0f0;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
   }
 </style>
-
 <body>
-  <!-- Navbar Section -->
+    <!-- Navbar Section -->
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img
-          src="asset/images/13logo.jpg"
-          style="height: 40px; width:auto; padding-bottom: 10px;" 
-          alt="Puppy Logo" class="logo-img">
-        <h2>PUPPY_WORLD</h2>
+        <img src="c:\Users\web.APTECHTR\Desktop\New folder (3)\images\dog-vector-logo-design_410429-4867.jpg" alt="Puppy Logo" class="logo-img">
+        <span class="logo-text">Puppy World</span>
       </div>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#dog-categories">Puppy Care</a></li>
+        <li><a href="#dog-categories">Dog Categories</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#food-nutrition">Log In </a></li>
-        <li><a href="#ask-question">FAQ's</a></li>
-        <li><a href="#contact us ">Contact us </a></li>
+        <li><a href="#food-nutrition">Food & Nutrition</a></li>
+        <li><a href="#ask-question">Ask Question</a></li>
       </ul>
     </nav>
   </header>
-
 </body>
-<script src="asset/js/bootstrap.bundle.js"></script>
-
 </html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+</head>
+<style>
+     .nav-item {
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    /* Make the carousel images responsive with fixed height */
+    .carousel-item img {
+      width: 100%;
+      height: 880px;
+      /* Set fixed height to 880px */
+      object-fit: cover;
+      /* Ensures that the images fill the space without stretching */
+    }
+
+    /* Center the navbar items on smaller screens */
+    .navbar-nav {
+      text-align: center;
+    }
+
+    /* Make the search form responsive */
+    .d-flex {
+      width: 100%;
+    }
+
+    /* Make navbar brand and logo responsive */
+    .navbar-brand h1 {
+      font-family: 'Lucida Handwriting';
+      font-size: 1.5rem;
+    }
+
+    /* Adjust navbar brand and logo on smaller screens */
+    @media (max-width: 768px) {
+      .navbar-brand h1 {
+        font-size: 1.2rem;
+      }
+
+      .navbar-toggler {
+        border-color: white;
+      }
+
+      .navbar-collapse {
+        text-align: center;
+      }
+
+      .nav-item {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5px;
+      }
+    }
+
+    /* Adjust image height for smaller screens */
+    @media (max-width: 768px) {
+      .carousel-item img {
+        height: 600px;
+        /* Reduce height on smaller screens */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .carousel-item img {
+        height: 400px;
+        /* Further reduce height on very small screens */
+      }
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+		<div class="container-fluid">
+		  <img src="asset/images/13logo.jpg" style="height: 50px;" alt="">
+		  <a class="navbar-brand" style="margin-left: 15px;" href="#">
+			<h1 style="font-family: Lucida Handwriting;">PUPPY_CARE</h1>
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+			<ul class="navbar-nav mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="">
+				  <h6 style="font-family: Lucida Handwriting;">Home</h6>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">
+				  <h6 style="font-family: Lucida Handwriting;">Gallery</h6>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page"
+				  href="\\aptech\Students\fn381\mehdi\MEHDIWEBSITES\project\faqs.html" target="_blank">
+				  <h6 style="font-family: Lucida Handwriting;">FAQS</h6>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page"
+				  href="\\aptech\Students\fn381\mehdi\MEHDIWEBSITES\project\contact-us.html" target="_blank">
+				  <h6 style="font-family: Lucida Handwriting;">Contact-us</h6>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">
+				  <h6 style="font-family: Lucida Handwriting;">Log-in</h6>
+				</a>
+			  </li>
+			</ul>
+			<form class="d-flex" role="search" style="margin-bottom: 7px;">
+			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		  </div>
+		</div>
+	  </nav>
+</body>
+<script src="asset/js/"></script>
+</html>
